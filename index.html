@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Eagle+Lake|Quintessential" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>15 Inconceivable Trivia Questions</title>
+
+</head>
+<body>
+<div class="container">
+    <header><img src="assets/images/banner2.png", id="banner"></header>
+
+    <div>
+        <div class="results"><p>You got <span id=correctCounter> </span> right!</p></div>
+        <div class="results"><p>You got <span id=incorrectCounter> </span> wrong!</p></div>
+        <div class="results"><p>You didn't answer <span id=missedCounter> </span> questions!</p></div>
+    </div>
+
+    <div>
+        <button type="button" id="start">START</button>
+    </div>
+
+    <form id="form" name="gameForm">
+        <p>What is the Princess Bride's real name?</p>
+            <label for="q1"><input type="radio" id="q1" name="question1" value="q1" class="radio">Orchid</label>
+            <label for="q12"><input type="radio" id="q12" name="question1" value="q12" class="radio">Daisy</label>
+            <label for="q13"><input type="radio" id="q13" name="question1" value="q13" class="radio">Crocus</label>
+            <label for="q14"><input type="radio" id="q14" name="question1" value="q14" class="radio">Buttercup</label>
+
+        <p>Which pirate kidnapped Westley?</p>
+            <label for="q2"><input type="radio" id="q2" name="question2" value="q2" class="radio">Dreded Pirate Roberts</label>
+            <label for="q22"><input type="radio" id="q22" name="question2" value="q22" class="radio">Dreded Pirate Stevens</label>
+            <label for="q23"><input type="radio" id="q23" name="question2" value="q23" class="radio">Dreded Pirate Jones</label>
+            <label for="q24"><input type="radio" id="q24" name="question2" value="q24" class="radio">Dreded Pirate Samuels</label>
+
+        <p>Which one of these men did NOT kidnapped the Princess Bride?</p>
+            <label for="q3"><input type="radio" id="q3" name="question3" value="q3" class="radio">Fezzik</label>
+            <label for="q32"><input type="radio" id="q32" name="question3" value="q32" class="radio">Vicini</label>
+            <label for="q33"><input type="radio" id="q33" name="question3" value="q33" class="radio">Rugen</label>
+            <label for="q34"><input type="radio" id="q34" name="question3" value="q34" class="radio">Inigo</label>
+
+        <p>What phrase does Westley use to prove his identity to the Princess?</p>
+            <label for="q4"><input type="radio" id="q4" name="question4" value="q4" class="radio">No problem</label>
+            <label for="q42"><input type="radio" id="q42" name="question4" value="q42" class="radio">As you wish</label>
+            <label for="q43"><input type="radio" id="q43" name="question4" value="q43" class="radio">Certainly your Highness</label>
+            <label for="q44"><input type="radio" id="q44" name="question4" value="q44" class="radio">Any time sweethart</label>
+            
+        <p>Finish this sentence, "My name is Inigo Montoya..."</p>
+            <label for="q5"><input type="radio" id="q5" name="question5" value="q5" class="radio">You killed my father, prepare to fight</label>
+            <label for="q52"><input type="radio" id="q52" name="question5" value="q52" class="radio">You killed my father, I don't like you very much</label>
+            <label for="q53"><input type="radio" id="q53" name="question5" value="q53" class="radio">You killed my father, prepare to die</label>
+            <label for="q54"><input type="radio" id="q54" name="question5" value="q54" class="radio">What do you think of that?</label>
+            
+        <p>Prince Humperdink promised the Princess he would send what to find Westley?</p>
+            <label for="q6"><input type="radio" id="q6" name="question6" value="q6" class="radio">His 4 fastest riders</label>
+            <label for="q62"><input type="radio" id="q62" name="question6" value="q62" class="radio">His 4 fastest ships</label>
+            <label for="q63"><input type="radio" id="q63" name="question6" value="q63" class="radio">His 4 fastest runners</label>
+            <label for="q64"><input type="radio" id="q64" name="question6" value="q64" class="radio">His 4 fastest white steeds</label>
+
+        <p>What was Miracle Max' favorite food?</p>
+            <label for="q7"><input type="radio" id="q7" name="question7" value="q7" class="radio">A nice BLT</label>
+            <label for="q72"><input type="radio" id="q72" name="question7" value="q72" class="radio">A nice pastrami on rye</label>
+            <label for="q73"><input type="radio" id="q73" name="question7" value="q73" class="radio">A nice meatball special, when the sause is good and hot</label>
+            <label for="q74"><input type="radio" id="q74" name="question7" value="q74" class="radio">A nice MLT</label>
+
+        <p>What is the name of the poison that Westley uses to match wits with Vincini?</p>
+             <label for="q8"><input type="radio" id="q8" name="question8" value="q8" class="radio">Cyanide</label>
+             <label for="q82"><input type="radio" id="q82" name="question8" value="q82" class="radio">Iokane</label>
+             <label for="q83"><input type="radio" id="q83" name="question8" value="q83" class="radio">Iodine</label>
+             <label for="q84"><input type="radio" id="q84" name="question8" value="q84" class="radio">Strychnine</label>
+
+        <p>Which body part did Westley tell Prince Humperdink he would spare?</p>
+            <label for="q9"><input type="radio" id="q9" name="question9" value="q9" class="radio">His ears</label>
+            <label for="q92"><input type="radio" id="q92" name="question9" value="q92" class="radio">His eyes</label>
+            <label for="q93"><input type="radio" id="q93" name="question9" value="q93" class="radio">His tongue</label>
+            <label for="q94"><input type="radio" id="q94" name="question9" value="q94" class="radio">His nose</label>
+
+        <p>How did Inigo recognise the man who killed his father?</p>
+            <label for="q10"><input type="radio" id="q10" name="question10" value="q10" class="radio">He had 11 toes</label>
+            <label for="q102"><input type="radio" id="q102" name="question10" value="q102" class="radio">He had 2 scars on his cheeks</label>
+            <label for="q103"><input type="radio" id="q103" name="question10" value="q103" class="radio">He had 6 fingers</label>
+            <label for="q104"><input type="radio" id="q104" name="question10" value="q104" class="radio">He had 4 fingers</label>
+
+        <p>Which actor played the character Inigo Montoya?</p>
+            <label for="q11"><input type="radio" id="q11" name="question11" value="q11" class="radio">Christopher Guest</label>
+            <label for="q112"><input type="radio" id="q112" name="question11" value="q112" class="radio">Cary Elwes</label>
+            <label for="q113"><input type="radio" id="q113" name="question11" value="q113" class="radio">Chris Sarandon</label>
+            <label for="q114"><input type="radio" id="q114" name="question11" value="q114" class="radio">Mandy Patinkin</label>
+
+        <p>How did the group escape from the castle?</p>
+            <label for="q12"><input type="radio" id="q12" name="question12" value="q12" class="radio">On white horses that Fezzik "found"</label>
+            <label for="q122"><input type="radio" id="q122" name="question12" value="q122" class="radio">On black horses that Inigo stole</label>
+            <label for="q123"><input type="radio" id="q123" name="question12" value="q123" class="radio">On grey horses that Vincini "found"</label>
+            <label for="q124"><input type="radio" id="q124" name="question12" value="q124" class="radio">On donkeys that were tied up outside</label>
+
+        <p>Who says: "You keep using that word, I do not think it means what you think it means"? Who is it said to and what is the word?</p>
+            <label for="q13"><input type="radio" id="q13" name="question13" value="q13" class="radio">Inigo to Fezzik about the word Rhymes</label>
+            <label for="q132"><input type="radio" id="q132" name="question13" value="q132" class="radio">Prince Humperdink to Westley about the word Pain</label>
+            <label for="q133"><input type="radio" id="q133" name="question13" value="q133" class="radio">Miracle Max to Inigo about the word Love</label>
+            <label for="q134"><input type="radio" id="q134" name="question13" value="q134" class="radio">Inigo to Vincini about the word Inconceivable</label>
+
+        <p>Who's house did Inigo stay at in the Thieves Forest?</p>
+            <label for="q14"><input type="radio" id="q14" name="question14" value="q14" class="radio">Falkbridge</label>
+            <label for="q142"><input type="radio" id="q142" name="question14" value="q142" class="radio">Yeste</label>
+            <label for="q143"><input type="radio" id="q143" name="question14" value="q143" class="radio">His own</label>
+            <label for="q144"><input type="radio" id="q144" name="question14" value="q144" class="radio">Your mom's</label>
+
+        <p>The main characters are played by Carey Elwes and Robin Wright</p>
+            <label for="q15"><input type="radio" id="q15" name="question15" value="q15" class="radio">True</label>
+            <label for="q152"><input type="radio" id="q152" name="question15" value="q152" class="radio">False</label> 
+
+        <div>
+            <button type="button" value="submit" id="submit">SUBMIT</button>
+        </div> 
+
+    </form>
+
+</div>
+<audio src="assets/images/Inconceivable.mp3" type="audio/mp3" id="Inconceivable">
+</audio>
+<audio src="assets/images/Ting.mp3" type="audio/mp3" id="Ting">
+</audio>
+
+
+<script src="assets/javascript/app.js"></script>
+
+</body>
+</html>
